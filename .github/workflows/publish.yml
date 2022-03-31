@@ -32,7 +32,7 @@ jobs:
         env:
           BUTLER_CREDENTIALS: ${{ secrets.ITCHIO_CREDENTIALS }}
           CHANNEL: ${{ env.ITCHIO_CHANNEL }}
-          ITCH_GAME: ${{ env.ITCHIO_PROJECT }}
+          ITCH_GAME: ${{ env.ITCHIO_GAME }}
           ITCH_USER: ${{ env.ITCHIO_USERNAME }}
           PACKAGE: dist
           VERSION: ${{ env.version }}
