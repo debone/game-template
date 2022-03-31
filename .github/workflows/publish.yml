@@ -1,5 +1,10 @@
 name: Publish to itch.io
 
+env:
+  ITCHIO_CHANNEL: html5
+  ITCHIO_GAME: testing-deploy
+  ITCHIO_USERNAME: debone
+
 # You can block these tags from push on github settings
 on:
   push:
@@ -26,8 +31,8 @@ jobs:
         uses: josephbmanley/butler-publish-itchio-action@master
         env:
           BUTLER_CREDENTIALS: ${{ secrets.ITCHIO_CREDENTIALS }}
-          CHANNEL: ${{ secrets.ITCHIO_CHANNEL }}
-          ITCH_GAME: ${{ secrets.ITCHIO_PROJECT }}
-          ITCH_USER: ${{ secrets.ITCHIO_USERNAME }}
+          CHANNEL: ${{ env.ITCHIO_CHANNEL }}
+          ITCH_GAME: ${{ env.ITCHIO_PROJECT }}
+          ITCH_USER: ${{ env.ITCHIO_USERNAME }}
           PACKAGE: dist
           VERSION: ${{ env.version }}
