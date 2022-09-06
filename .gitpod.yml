@@ -12,3 +12,4 @@ vscode:
     - dbaeumer.vscode-eslint
     - esbenp.prettier-vscode
     - fabiospampinato.vscode-todo-plus
+    - ZixuanChen.vitest-explorer
