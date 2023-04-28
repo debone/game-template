@@ -2,7 +2,7 @@ import "./style.css";
 
 import Phaser from "phaser";
 
-import { SceneMain } from "./scenes/main";
+import { SceneWorld } from "./scenes/world";
 
 import { GAME_CONFIG } from "./consts";
 import PhaserGamebus from "./gamebus";
@@ -19,7 +19,7 @@ export const config = {
       },
     ],
   },
-  scene: [SceneMain],
+  scene: [SceneWorld],
 };
 
 new Phaser.Game(config);

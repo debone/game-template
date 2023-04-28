@@ -1,8 +1,8 @@
 import Phaser from "phaser";
 
-export class SceneMain extends Phaser.Scene {
+export class SceneWorld extends Phaser.Scene {
   constructor() {
-    super({ key: "SceneMain" });
+    super({ key: "SceneWorld" });
   }
 
   preload() {}
